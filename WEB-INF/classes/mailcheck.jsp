@@ -10,11 +10,11 @@
 		if (name!=null) session.setAttribute("username", name);
 		else{
 			name = (String)session.getAttribute("username");
-			if (name == null) response.sendRedirect("maillogin.jsp");
+			if (name == null) response.sendRedirect(response.encodeURL("maillogin.jsp"));
 		}
 		%>
-		<a href="maillogin.jsp">登录</a>
-		<a href="maillogout.jsp">注销</a>
+		<a href="<%=response.encodeURL("maillogin.jsp") %>">登录</a>
+		<a href="<%=response.encodeURL("maillogout.jsp")%>">注销</a>
 		<p>当前用户为：<%= name %></p>
 		<p>你的信箱中有100封信</p>
 	</body>

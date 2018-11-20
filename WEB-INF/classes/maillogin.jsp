@@ -19,7 +19,7 @@
 			<tr>
 				<td>
 					<table width="500" border="0" cellspacing="0" cellpadding="0">
-						<form name="loginForm" method="post" action="mailcheck.jsp">
+						<form name="loginForm" method="post" action="<%=response.encodeURL("mailcheck.jsp")%>">
 						<tr>
 							<td width="401"><div align="right">User Name:&nbsp;</div></td>
 							<td width="399"><input type="text" name="username" value="<%= name%>"></td>
