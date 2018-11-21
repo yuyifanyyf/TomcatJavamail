@@ -19,7 +19,7 @@ public class OnlineCounterListener implements HttpSessionListener{
 		}
 		
 		context.setAttribute("counter", counter);
-		session.setMaxInactiveInterval(60);
+		session.setMaxInactiveInterval(30);
 		
 		System.out.println("A new session is created.");
 	}
