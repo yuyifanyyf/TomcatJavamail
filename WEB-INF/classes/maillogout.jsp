@@ -11,6 +11,6 @@
 		<%=name %>再见
 		<p>
 		<p>
-		<a href="<%=response.encodeURL("maillogin.jsp")%>">重新登陆邮件系统</a>
+		<a href="maillogin.jsp">重新登陆邮件系统</a>
 	</body>
 </html>

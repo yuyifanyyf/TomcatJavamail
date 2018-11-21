@@ -1,0 +1,5 @@
+<web-app>
+	<listener>
+		<listener-class>mypack.OnlineCounterListener</listener-class>
+	</listener>
+</web-app>
