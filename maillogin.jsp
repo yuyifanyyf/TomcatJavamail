@@ -1,3 +1,4 @@
+<%@page import="mypack.User"%>
 <%@ page contentType="text/html; charset=GB2312" %>
 <html>
 	<head>
@@ -6,10 +7,12 @@
 	<body bgcolor="#FFFFFF" onload="document.loginForm.username.focus()">
 		<%
 		String name = "";
+		User user = null;
 		if (!session.isNew())
 		{
-			name = (String)session.getAttribute("username");
-			if (name == null) name="";
+			user = (User)session.getAttribute("user");
+			if (user == null) name="";
+			else name = user.getName();
 		}
 		%>
 		<p>欢迎光临邮件系统</p>

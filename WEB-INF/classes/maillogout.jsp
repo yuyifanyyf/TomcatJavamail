@@ -1,3 +1,4 @@
+<%@page import="mypack.User"%>
 <%@ page contentType="text/html; charset=GB2312" %>
 <html>
 	<head>
@@ -5,7 +6,8 @@
 	</head>
 	<body>
 		<%
-		String name = (String)session.getAttribute("username");
+		User user = (User)session.getAttribute("user");
+		String name = user.getName();
 		session.invalidate();
 		%>
 		<%=name %>ты╪Ш
